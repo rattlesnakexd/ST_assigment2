@@ -18,10 +18,10 @@ module.exports = {
   src_folders: ['features/step_definations'],
 
   // See https://nightwatchjs.org/guide/concepts/page-object-model.html
-  page_objects_path: ['node_modules/nightwatch/examples/pages/'],
+  // page_objects_path: ['node_modules/nightwatch/examples/pages/'],
 
-  // See https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-commands.html
-  custom_commands_path: ['node_modules/nightwatch/examples/custom-commands/'],
+  // // See https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-commands.html
+  // custom_commands_path: ['node_modules/nightwatch/examples/custom-commands/'],
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-assertions.html
   custom_assertions_path: '',
@@ -141,8 +141,6 @@ module.exports = {
     // to adapt this to your own project needs                                       |
     //////////////////////////////////////////////////////////////////////////////////
     'cucumber-js': {
-      src_folders: ['examples/cucumber-js/features/step_definitions'],
-
       test_runner: {
         // set cucumber as the runner
         type: 'cucumber',
@@ -150,7 +148,7 @@ module.exports = {
         // define cucumber specific options
         options: {
           //set the feature path
-          feature_path: 'node_modules/nightwatch/examples/cucumber-js/*/*.feature',
+          feature_path: 'features/**/*.feature',
 
           // start the webdriver session automatically (enabled by default)
           // auto_start_session: true
