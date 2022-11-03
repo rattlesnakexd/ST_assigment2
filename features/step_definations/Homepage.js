@@ -7,5 +7,16 @@ Given ("I open React Storefront Homepage", function()
 
 Then ("The title is {string}", function(title)
 {
+    
     return browser.assert.titleEquals(title)
+})
+
+When (/^I click (.*?)$/, function(button)
+{
+   return browser.click(button)
+})
+
+Then (/^the title is (.*?)$/, function(title)
+{
+   return browser.assert.titleEquals(title)
 })
