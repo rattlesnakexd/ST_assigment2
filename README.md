@@ -7,3 +7,6 @@ First team meeting :
 Second team meeting :
 1) Resolving framework configration problems
 2) Resolving gerkin to javascript mapping problems
+
+Third team meeting :
+1) Selecting three API test automation scenarios
