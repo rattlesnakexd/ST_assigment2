@@ -13,7 +13,8 @@ Second team meeting :
 
 Third team meeting :
 
-1. Selecting three API test automation scenarios
+1. Dividing the API testing work
+2. Selecting three API test automation scenarios
 
 ---
 
@@ -39,6 +40,7 @@ Next they are also testing that if the prop is not desktop, then the carousel do
 it('should not have hidetouchArrows class when arrow prop is not desktop', () => {
 wrapper = mount(
 <Carousel arrows="all">
+
 <div>child1</div>
 <div>child2</div>
 </Carousel>,
@@ -62,6 +64,7 @@ wrapper.unmount()
 it('should render children', () => {
 wrapper = mount(
 <SearchButton>
+
 <div id="test" />
 </SearchButton>,
 )
@@ -88,15 +91,15 @@ Here the wrapper is mounnting the search div and then testing for the search but
 
 Next we have a test case to test the search drawers of the search bar.
 
- it('should render children', () => {
-    wrapper = mount(
-      <SearchDrawer open onClose={() => null}>
-        <div id="test" />
-      </SearchDrawer>,
-    )
+it('should render children', () => {
+wrapper = mount(
+<SearchDrawer open onClose={() => null}>
+<div id="test" />
+</SearchDrawer>,
+)
 
     expect(wrapper.find('#test')).toExist()
-  })
-  
-  Here they are mounting the search drawer div to wrappper and then testing the search drawer to exist
-  
+
+})
+
+Here they are mounting the search drawer div to wrappper and then testing the search drawer to exist
