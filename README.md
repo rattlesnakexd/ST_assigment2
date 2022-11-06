@@ -85,3 +85,18 @@ wrapper = mount(<SearchButton spreadprops="test" />)
 })
 
 Here the wrapper is mounnting the search div and then testing for the search button rendering and testing.
+
+Next we have a test case to test the search drawers of the search bar.
+
+ it('should render children', () => {
+    wrapper = mount(
+      <SearchDrawer open onClose={() => null}>
+        <div id="test" />
+      </SearchDrawer>,
+    )
+
+    expect(wrapper.find('#test')).toExist()
+  })
+  
+  Here they are mounting the search drawer div to wrappper and then testing the search drawer to exist
+  
